@@ -1,3 +1,17 @@
+:root {
+  /* Цвета */
+  --BG-COLOR-1: #1f1f1f;
+  --BG-COLOR-2: #f2f2f2;
+  --EXTRA-COLOR: #2f80ed;
+  --TEXT-COLOR: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -6,20 +20,72 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--TEXT-COLOR);
+}
+
+.bg-grey {
+    background-color: var(--BG-COLOR-2);
+    z-index: -4;
 }
 
 .header {
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
 }
 
+.logo {
+  width: 228px;
+  height: 32px;
+  z-index: 2;
+}
+
+.logo__place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  align-self: center;
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  margin-left: 64px;
+  z-index: 1;
+}
+
+.header__subtitle {
+  width: 388px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 1;
+}
+
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position: absolute;
+  top: 64px;
+  right: 0;
   height: 568px;
   width: 568px;
+  background-color: var(--EXTRA-COLOR);
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -28,4 +94,144 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.margin-bottom_100px {
+  margin-bottom: 100px;
+}
+
+.description {
+  display: flex;
+  flex-flow: column;
+}
+
+.two-columns {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  min-width: 784px;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  line-height: 1.2;
+  font-size: 18px;
+  width: 175px;
+  font-weight: normal;
+  color: var(--EXTRA-COLOR);
+}
+
+.two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+  flex-shrink: 9;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
+/* Секция с таблицей */
+
+.section-title {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto 20px auto;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  row-gap: 60px;
+  width: 1100px;
+  padding-top: 60px;
+  margin: 0 auto;
+}
+
+.table__cell {
+  width: 250px;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 20px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.feynman {
+  height: 100vh;
+  position: relative;
+}
+
+.feynman__image {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
+.feynman__title {
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  margin: 0 auto 70px auto;
+  text-align: center;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feynman__link {
+  position: absolute;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  top: 50%;
+  right: 48px;
+}
+
+a {
+  color: var(--EXTRA-COLOR);
+  text-decoration: none;
 }
