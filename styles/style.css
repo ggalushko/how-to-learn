@@ -8,7 +8,7 @@
 }
 
 * {
-  /* Обнуление отступов */
+  /* Дополнительное обнуление параметров для контроля разметки */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,16 +20,6 @@
   margin: 0 auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: var(--TEXT-COLOR);
-}
-
-/* Классы для элементов, которые используются в нескольких блоках */
-.margin-sides_auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.margin-bottom_20px {
-  margin-bottom: 20px;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
@@ -75,6 +65,11 @@
   bottom: 30px;
   left: 64px;
   z-index: 1;
+}
+
+.header__link {
+  color: var(--EXTRA-COLOR);
+  text-decoration: none;
 }
 
 .header__square-pic {
@@ -205,7 +200,7 @@
   position: relative;
   padding-top: 100px;
   background-color: var(--BG-COLOR-2);
-  z-index: -1;
+  z-index: 0;
 }
 
 .feynman__image {
@@ -224,7 +219,6 @@
   font-size: 120px;
   font-weight: 600;
   margin: 0 auto 70px auto;
-
   text-align: center;
 }
 
@@ -238,16 +232,13 @@
 
 .feynman__link {
   position: absolute;
+  display: inline-block;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   text-align: center;
   top: 50%;
   right: 48px;
-  color: var(--EXTRA-COLOR);
-}
-
-.link__color_extra {
   color: var(--EXTRA-COLOR);
   text-decoration: none;
 }
@@ -258,8 +249,8 @@
 .kaufman {
   position: relative;
   overflow: hidden;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   background-color: var(--BG-COLOR-1);
   z-index: -1;
 }
