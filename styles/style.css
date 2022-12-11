@@ -198,15 +198,9 @@
   position: relative;
   background-color: var(--BG-COLOR-2);
   z-index: 0;
-}
-
-.feynman__image {
-  width: 867px;
-  height: 637px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
+  background-image: url("../images/feynman.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
 }
 
 .feynman__title {
@@ -230,11 +224,9 @@
 
 .feynman__link {
   position: absolute;
-  display: inline-block;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  text-align: center;
   top: 50%;
   right: 48px;
   color: var(--EXTRA-COLOR);
