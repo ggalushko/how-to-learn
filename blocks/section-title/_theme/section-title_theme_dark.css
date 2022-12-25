@@ -1,0 +1,11 @@
+.section-title_theme_dark {
+    width: 60%;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: 600;
+    z-index: 2;
+    position: relative;
+    color: var(--TEXT-COLOR-DARK-THEME);
+    margin: 0 auto 20px auto;
+  }

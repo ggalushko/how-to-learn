@@ -1,0 +1,9 @@
+.table__cell_theme_dark {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 20px;
+    width: 200px;
+    color: var(--TEXT-COLOR-DARK-THEME);
+    margin-top: 80px;
+    z-index: 1;
+  }

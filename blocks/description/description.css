@@ -1,0 +1,5 @@
+.description {
+    display: flex;
+    flex-flow: column;
+    padding-top: 100px;
+  }
