@@ -1,0 +1,7 @@
+.oakley {
+    background-color: var(--BG-COLOR-2);
+    padding-top: 160px;
+    display: flex;
+    flex-flow: column;
+
+}
